@@ -3,7 +3,7 @@
 @implementation MixpanelPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"mixpanel"
+      methodChannelWithName:@"flutuate.io/plugins/mixpanel"
             binaryMessenger:[registrar messenger]];
   MixpanelPlugin* instance = [[MixpanelPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
